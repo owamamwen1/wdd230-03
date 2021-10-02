@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* header,
+nav,
+main,
+footer {
+  margin: 0 auto;
+  padding: 0.75rem;
+  max-width: 45rem;
+}
+header {
+  margin-top: 10px;
+} */
+header,
+nav,
+footer {
+  text-align: center;
+  background-color: rgb(171, 175, 189);
+  color: #fff;
+  border-radius: 10px;
+}
+nav {
+  background-color: rgb(171, 175, 189);
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  background: linear-gradient(90deg, transparent, green, transparent) top /
+    var(--d, 0) 10px no-repeat;
+  transition: 0.5s;
+}
+nav a:hover {
+  color: #0c87da;
+  --d: 75%;
+  background-color: rgb(131, 160, 135);
+}
+.active {
+  color: green;
+}
+/* Phone or baseline views */
+main {
+  text-align: center;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-gap: 5px;
+  padding: 5px;
+  grid-area: main;
+}
+main {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  font-size: 0.8rem;
+}
+/* owas */
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+section {
+  padding: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+/* owas */
+/* main picture  */
+
+/* Tablet Views */
+@media only screen and (min-width: 37.5em) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  article:nth-child(3) {
+    grid-column: span 2;
+  }
+  main picture {
+    display: block;
+  }
+  main picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+  }
+}
+/* Desktop Views */
+@media only screen and (min-width: 60em) {
+  main {
+    /* grid-template-columns: 1fr 1fr 1fr; */
+  }
+}
